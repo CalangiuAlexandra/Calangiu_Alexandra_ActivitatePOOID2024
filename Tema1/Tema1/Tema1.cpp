@@ -71,6 +71,7 @@ public:
 
     void setProducator(char* altProducator)
     {
+        delete[] producator;
         producator = new char[strlen(altProducator) + 1];
         strcpy(producator, altProducator);
     }
@@ -84,6 +85,21 @@ public:
     {
         capacitate = capacitateNoua;
     }
+
+    Autobuz& operator=(const Autobuz& altAutobuz)
+    {
+        if (this != &altAutobuz) {
+            delete[] producator;
+
+            this->capacitate = altAutobuz.capacitate;
+            this->nrPersoaneImbracate = altAutobuz.nrPersoaneImbracate;
+
+            this->producator = new char[strlen(altAutobuz.producator) + 1];
+            strcpy(this->producator, altAutobuz.producator);
+        }
+
+        return *this;
+    }
 };
 
 int Autobuz::nrAutobuze = 0;
@@ -96,5 +112,8 @@ int main()
 
     cout << "Autobuz produse de: " << autobuzFaraParametri.getProducator() << " cu capacitatea de: " << autobuzFaraParametri.getCapacitate() << " pasageri." << endl;
     cout << "Autobuz produse de: " << autobuzCuParametri.getProducator() << " cu capacitatea de: " << autobuzCuParametri.getCapacitate() << " pasageri." << endl;
+    cout << "Autobuz produse de: " << autobuzCopie.getProducator() << " cu capacitatea de: " << autobuzCopie.getCapacitate() << " pasageri." << endl;
+
+    autobuzCopie = autobuzFaraParametri;
     cout << "Autobuz produse de: " << autobuzCopie.getProducator() << " cu capacitatea de: " << autobuzCopie.getCapacitate() << " pasageri." << endl;
 }
