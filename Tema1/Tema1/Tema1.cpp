@@ -117,6 +117,11 @@ public:
     {
         return nrPersoaneImbracate;
     }
+
+    bool operator>(const Autobuz& altAutobuz)
+    {
+        return this->capacitate > altAutobuz.capacitate;
+    }
 };
 
 std::ostream& operator<<(std::ostream& os, const Autobuz& autobuz)
@@ -143,5 +148,13 @@ int main()
 
     cout << autobuzFaraParametri;
     cout << autobuzCuParametri.numarLocuriLibere() << endl;
-    cout << "Numarul de persoane imbarcate este: " << (int)autobuzCopie;
+    cout << "Numarul de persoane imbarcate este: " << (int)autobuzCopie << endl;
+
+    int maiMare = autobuzFaraParametri > autobuzCuParametri;
+    if (maiMare) {
+        cout << "Autobuzul fara parametri e mai mare ca cel cu parametri";
+    }
+    else {
+        cout << "Autobuzul fara parametri nu e mai mare ca cel cu parametri";
+    }
 }
