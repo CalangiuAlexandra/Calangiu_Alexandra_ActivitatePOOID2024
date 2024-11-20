@@ -100,7 +100,17 @@ public:
 
         return *this;
     }
+
+    friend std::ostream& operator<<(std::ostream& os, const Autobuz& autobuz);
+
 };
+
+std::ostream& operator<<(std::ostream& os, const Autobuz& autobuz)
+{
+    os << autobuz.idAutobuz << ";" << autobuz.capacitate << ";" << autobuz.nrPersoaneImbracate << ";" << autobuz.producator;
+
+    return os;
+}
 
 int Autobuz::nrAutobuze = 0;
 
@@ -116,4 +126,6 @@ int main()
 
     autobuzCopie = autobuzFaraParametri;
     cout << "Autobuz produse de: " << autobuzCopie.getProducator() << " cu capacitatea de: " << autobuzCopie.getCapacitate() << " pasageri." << endl;
+
+    cout << autobuzFaraParametri;
 }
