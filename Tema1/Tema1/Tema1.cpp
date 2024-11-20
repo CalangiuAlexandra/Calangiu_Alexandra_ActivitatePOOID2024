@@ -113,6 +113,10 @@ public:
 
     friend std::ostream& operator<<(std::ostream& os, const Autobuz& autobuz);
 
+    explicit operator int()
+    {
+        return nrPersoaneImbracate;
+    }
 };
 
 std::ostream& operator<<(std::ostream& os, const Autobuz& autobuz)
@@ -138,5 +142,6 @@ int main()
     cout << "Autobuz produse de: " << autobuzCopie.getProducator() << " cu capacitatea de: " << autobuzCopie.getCapacitate() << " pasageri." << endl;
 
     cout << autobuzFaraParametri;
-    cout << autobuzCuParametri.numarLocuriLibere();
+    cout << autobuzCuParametri.numarLocuriLibere() << endl;
+    cout << "Numarul de persoane imbarcate este: " << (int)autobuzCopie;
 }
