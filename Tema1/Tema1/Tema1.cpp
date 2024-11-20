@@ -49,9 +49,40 @@ public:
         }
     }
 
+    Autobuz(const Autobuz& altAutobuz): idAutobuz(altAutobuz.idAutobuz+1)
+    {
+        nrAutobuze++;
+        this->capacitate = altAutobuz.capacitate;
+        this->nrPersoaneImbracate = altAutobuz.nrPersoaneImbracate;
+
+        this->producator = new char[strlen(altAutobuz.producator) + 1];
+        strcpy(this->producator, altAutobuz.producator);
+    }
+
     ~Autobuz()
     {
         delete[] producator;
+    }
+
+    char* getProducator()
+    {
+        return producator;
+    }
+
+    void setProducator(char* altProducator)
+    {
+        producator = new char[strlen(altProducator) + 1];
+        strcpy(producator, altProducator);
+    }
+
+    int getCapacitate()
+    {
+        return capacitate;
+    }
+
+    int setCapacitate(int capacitateNoua)
+    {
+        capacitate = capacitateNoua;
     }
 };
 
@@ -61,4 +92,9 @@ int main()
 {
     Autobuz autobuzFaraParametri = Autobuz();
     Autobuz autobuzCuParametri = Autobuz(15, 1, (char*)"Ford");
+    Autobuz autobuzCopie = autobuzCuParametri;
+
+    cout << "Autobuz produse de: " << autobuzFaraParametri.getProducator() << " cu capacitatea de: " << autobuzFaraParametri.getCapacitate() << " pasageri." << endl;
+    cout << "Autobuz produse de: " << autobuzCuParametri.getProducator() << " cu capacitatea de: " << autobuzCuParametri.getCapacitate() << " pasageri." << endl;
+    cout << "Autobuz produse de: " << autobuzCopie.getProducator() << " cu capacitatea de: " << autobuzCopie.getCapacitate() << " pasageri." << endl;
 }
