@@ -86,6 +86,16 @@ public:
         capacitate = capacitateNoua;
     }
 
+    int numarLocuriLibere()
+    {
+        if (nrPersoaneImbracate > capacitate) {
+            return 0;
+        }
+        else {
+            return capacitate - nrPersoaneImbracate;
+        }
+    }
+
     Autobuz& operator=(const Autobuz& altAutobuz)
     {
         if (this != &altAutobuz) {
@@ -107,7 +117,7 @@ public:
 
 std::ostream& operator<<(std::ostream& os, const Autobuz& autobuz)
 {
-    os << autobuz.idAutobuz << ";" << autobuz.capacitate << ";" << autobuz.nrPersoaneImbracate << ";" << autobuz.producator;
+    os << autobuz.idAutobuz << ";" << autobuz.capacitate << ";" << autobuz.nrPersoaneImbracate << ";" << autobuz.producator << endl;
 
     return os;
 }
@@ -128,4 +138,5 @@ int main()
     cout << "Autobuz produse de: " << autobuzCopie.getProducator() << " cu capacitatea de: " << autobuzCopie.getCapacitate() << " pasageri." << endl;
 
     cout << autobuzFaraParametri;
+    cout << autobuzCuParametri.numarLocuriLibere();
 }
