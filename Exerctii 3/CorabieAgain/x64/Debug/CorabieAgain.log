@@ -1,0 +1,3 @@
+﻿  Corabie.cpp
+C:\Users\Stefan\source\repos\Calangiu_Alexandra_ActivitatePOOID2024\CorabieAgain\CorabieAgain\Corabie.cpp(96,13): warning C4326: return type of 'main' should be 'int' instead of 'void'
+  CorabieAgain.vcxproj -> C:\Users\Stefan\source\repos\Calangiu_Alexandra_ActivitatePOOID2024\CorabieAgain\x64\Debug\CorabieAgain.exe

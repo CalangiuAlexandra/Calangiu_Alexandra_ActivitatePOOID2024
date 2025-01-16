@@ -1,0 +1,10 @@
+﻿  Farma.cpp
+C:\Users\Stefan\source\repos\Calangiu_Alexandra_ActivitatePOOID2024\Farmacie2\Farmacie2\Farma.cpp(100,13): warning C4326: return type of 'main' should be 'int' instead of 'void'
+C:\Users\Stefan\source\repos\Calangiu_Alexandra_ActivitatePOOID2024\Farmacie2\Farmacie2\Farma.cpp(111,34): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\Users\Stefan\source\repos\Calangiu_Alexandra_ActivitatePOOID2024\Farmacie2\Farmacie2\Farma.cpp(111,40): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\Users\Stefan\source\repos\Calangiu_Alexandra_ActivitatePOOID2024\Farmacie2\Farmacie2\Farma.cpp(122,34): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\Users\Stefan\source\repos\Calangiu_Alexandra_ActivitatePOOID2024\Farmacie2\Farmacie2\Farma.cpp(122,40): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\Users\Stefan\source\repos\Calangiu_Alexandra_ActivitatePOOID2024\Farmacie2\Farmacie2\Farma.cpp(133,36): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\Users\Stefan\source\repos\Calangiu_Alexandra_ActivitatePOOID2024\Farmacie2\Farmacie2\Farma.cpp(133,41): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\Users\Stefan\source\repos\Calangiu_Alexandra_ActivitatePOOID2024\Farmacie2\Farmacie2\Farma.cpp(133,46): warning C4305: 'initializing': truncation from 'double' to 'float'
+  Farmacie2.vcxproj -> C:\Users\Stefan\source\repos\Calangiu_Alexandra_ActivitatePOOID2024\Farmacie2\x64\Debug\Farmacie2.exe

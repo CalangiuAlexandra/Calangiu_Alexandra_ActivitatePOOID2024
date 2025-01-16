@@ -1,0 +1,5 @@
+﻿  Corabie.cpp
+C:\Users\Stefan\source\repos\Calangiu_Alexandra_ActivitatePOOID2024\Corabie\Corabie\Corabie.cpp(98,1): warning C4326: return type of 'main' should be 'int' instead of 'void'
+C:\Users\Stefan\source\repos\Calangiu_Alexandra_ActivitatePOOID2024\Corabie\Corabie\Corabie.cpp(114,17): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Stefan\source\repos\Calangiu_Alexandra_ActivitatePOOID2024\Corabie\Corabie\Corabie.cpp(127,23): warning C4305: 'argument': truncation from 'double' to 'float'
+  Corabie.vcxproj -> C:\Users\Stefan\source\repos\Calangiu_Alexandra_ActivitatePOOID2024\Corabie\x64\Debug\Corabie.exe

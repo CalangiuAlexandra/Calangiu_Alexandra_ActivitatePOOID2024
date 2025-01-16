@@ -1,0 +1,7 @@
+﻿  Medica.cpp
+C:\Users\Stefan\source\repos\Calangiu_Alexandra_ActivitatePOOID2024\Medicamente\Medicamente\Medica.cpp(96,14): warning C4326: return type of 'main' should be 'int' instead of 'void'
+C:\Users\Stefan\source\repos\Calangiu_Alexandra_ActivitatePOOID2024\Medicamente\Medicamente\Medica.cpp(107,30): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\Users\Stefan\source\repos\Calangiu_Alexandra_ActivitatePOOID2024\Medicamente\Medicamente\Medica.cpp(107,35): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\Users\Stefan\source\repos\Calangiu_Alexandra_ActivitatePOOID2024\Medicamente\Medicamente\Medica.cpp(107,41): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\Users\Stefan\source\repos\Calangiu_Alexandra_ActivitatePOOID2024\Medicamente\Medicamente\Medica.cpp(128,35): warning C4305: 'initializing': truncation from 'double' to 'float'
+  Medicamente.vcxproj -> C:\Users\Stefan\source\repos\Calangiu_Alexandra_ActivitatePOOID2024\Medicamente\x64\Debug\Medicamente.exe
